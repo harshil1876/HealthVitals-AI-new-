@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import Icon from '../../components/AppIcon';
-import Button from '../../components/ui/Button';
-import GlobalHeader from '../../components/ui/GlobalHeader';
-import PrimaryTabNavigation from '../../components/ui/PrimaryTabNavigation';
+import React, { useState } from "react";
+import Icon from "../../components/AppIcon";
+import Button from "../../components/ui/Button";
+import GlobalHeader from "../../components/ui/GlobalHeader";
+import PrimaryTabNavigation from "../../components/ui/PrimaryTabNavigation";
 
 const Reports = () => {
-  const [timeInterval, setTimeInterval] = useState('week');
+  const [timeInterval, setTimeInterval] = useState("week");
 
   const handleDownload = () => {
     // Implement report download functionality
-    console.log('Downloading report...');
+    console.log("Downloading report...");
   };
 
   const handleShare = () => {
     // Implement report sharing functionality
-    console.log('Sharing report...');
+    console.log("Sharing report...");
   };
 
   return (
@@ -27,8 +27,12 @@ const Reports = () => {
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-3xl font-bold text-text-primary">Weekly Reports</h1>
-              <p className="text-text-secondary">Your comprehensive wellness insights</p>
+              <h1 className="text-3xl font-bold text-text-primary">
+                Weekly Reports
+              </h1>
+              <p className="text-text-secondary">
+                Your comprehensive wellness insights
+              </p>
             </div>
             <div className="flex items-center space-x-3">
               <select
@@ -61,7 +65,9 @@ const Reports = () => {
 
           {/* WTF Did You Do This Week? */}
           <div className="bg-gradient-to-r from-primary to-secondary rounded-medical-lg shadow-medical p-8 mb-8 text-white">
-            <h2 className="text-2xl font-bold mb-6">WTF Did You Do This Week?</h2>
+            <h2 className="text-2xl font-bold mb-6">
+              What did You Do This Week?
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div>
                 <p className="text-3xl font-bold">7</p>
@@ -93,12 +99,20 @@ const Reports = () => {
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
-                  <Icon name="AlertCircle" size={20} className="text-warning mt-1" />
-                  <p className="text-text-secondary">You're getting less sleep than recommended.</p>
+                  <Icon
+                    name="AlertCircle"
+                    size={20}
+                    className="text-warning mt-1"
+                  />
+                  <p className="text-text-secondary">
+                    You're getting less sleep than recommended.
+                  </p>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Icon name="Activity" size={20} className="text-error mt-1" />
-                  <p className="text-text-secondary">You exercised less than the recommended amount this week.</p>
+                  <p className="text-text-secondary">
+                    You exercised less than the recommended amount this week.
+                  </p>
                 </li>
               </ul>
             </div>
@@ -113,11 +127,17 @@ const Reports = () => {
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <Icon name="Check" size={20} className="text-success mt-1" />
-                  <p className="text-text-secondary">Aim for 7-9 hours of sleep. Try establishing a consistent bedtime routine.</p>
+                  <p className="text-text-secondary">
+                    Aim for 7-9 hours of sleep. Try establishing a consistent
+                    bedtime routine.
+                  </p>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Icon name="Check" size={20} className="text-success mt-1" />
-                  <p className="text-text-secondary">Try to incorporate more physical activity. Even 10-minute walks help!</p>
+                  <p className="text-text-secondary">
+                    Try to incorporate more physical activity. Even 10-minute
+                    walks help!
+                  </p>
                 </li>
               </ul>
             </div>
@@ -131,8 +151,12 @@ const Reports = () => {
                 <div className="inline-block p-8 bg-error/10 rounded-full mb-4">
                   <Icon name="Frown" size={48} className="text-error" />
                 </div>
-                <h3 className="text-lg font-medium text-text-primary">Challenging emotional period</h3>
-                <p className="text-text-secondary mt-2">Based on your voice tone analysis and daily reflections</p>
+                <h3 className="text-lg font-medium text-text-primary">
+                  Challenging emotional period
+                </h3>
+                <p className="text-text-secondary mt-2">
+                  Based on your voice tone analysis and daily reflections
+                </p>
               </div>
             </div>
 
@@ -165,7 +189,9 @@ const Reports = () => {
                     <span className="text-2xl font-bold">77.1%</span>
                   </div>
                 </div>
-                <p className="text-text-secondary mt-4">Average progress across all your active goals</p>
+                <p className="text-text-secondary mt-4">
+                  Average progress across all your active goals
+                </p>
               </div>
             </div>
           </div>
@@ -174,9 +200,22 @@ const Reports = () => {
           <div className="bg-background rounded-medical-lg shadow-medical p-6">
             <h2 className="text-xl font-semibold mb-4">Weekly Summary</h2>
             <div className="prose max-w-none text-text-secondary">
-              <p>This week, you logged 1 days of data. Your overall wellness score was <strong>6.3/10</strong>, showing strong emotional well-being.</p>
-              <p className="mt-4">Your sleep pattern averaged <strong>6 hours</strong> per night, and you completed <strong>73 minutes</strong> of physical activity. Your emotional state was characterized as <strong>challenging emotional period</strong>.</p>
-              <p className="mt-4">Looking ahead, focus on the recommendations above to continue your wellness journey. Remember, small consistent improvements lead to significant long-term changes.</p>
+              <p>
+                This week, you logged 1 days of data. Your overall wellness
+                score was <strong>6.3/10</strong>, showing strong emotional
+                well-being.
+              </p>
+              <p className="mt-4">
+                Your sleep pattern averaged <strong>6 hours</strong> per night,
+                and you completed <strong>73 minutes</strong> of physical
+                activity. Your emotional state was characterized as{" "}
+                <strong>challenging emotional period</strong>.
+              </p>
+              <p className="mt-4">
+                Looking ahead, focus on the recommendations above to continue
+                your wellness journey. Remember, small consistent improvements
+                lead to significant long-term changes.
+              </p>
             </div>
           </div>
         </div>
@@ -190,9 +229,24 @@ const Reports = () => {
               © {new Date().getFullYear()} HealthVitals AI. All rights reserved.
             </p>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-sm text-text-secondary hover:text-primary">Privacy Policy</a>
-              <a href="#" className="text-sm text-text-secondary hover:text-primary">Terms of Service</a>
-              <a href="#" className="text-sm text-text-secondary hover:text-primary">Contact Support</a>
+              <a
+                href="#"
+                className="text-sm text-text-secondary hover:text-primary"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-sm text-text-secondary hover:text-primary"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="text-sm text-text-secondary hover:text-primary"
+              >
+                Contact Support
+              </a>
             </div>
           </div>
         </div>
