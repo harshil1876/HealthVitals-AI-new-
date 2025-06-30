@@ -1,0 +1,12 @@
+SpeechRecognition
+requests
+pygame
+gTTS
+google-generativeai
+librosa
+numpy
+pandas
+scikit-learn
+scipy
+Flask
+Flask-Cors 

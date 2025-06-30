@@ -1,0 +1,29 @@
+{
+    "hello ": [
+        "Hi Harshil, how are you doing today?"
+    ],
+    "hello how are you ": [
+        "Hello Harshil! I'm doing well, thank you for asking.  How are you today?"
+    ],
+    "exit": [
+        "Okay, Harshil.  It was nice talking to you.  Take care."
+    ],
+    "good": [
+        "That's good to hear, Harshil! Is there anything specific that's making you feel good today?  Or is it just a generally positive feeling?"
+    ],
+    "I am feeling good.": [
+        "That's wonderful, Harshil!  It's great to hear you're feeling good. Is there anything specific that's contributing to your positive mood today?  Or is it just a generally good feeling?"
+    ],
+    "Hello.": [
+        "Hi Pratham, it's nice to talk to you. How are you doing today?"
+    ],
+    "Vivek Chakra.": [
+        "Okay, Pratham.  You said \"Vivek Chakra.\" Is that something you'd like to talk about?  Or was that a slip of the tongue?  There's no pressure either way, but I just wanted to check in."
+    ],
+    "I want to talk to you in Hindi.": [
+        "Okay, Pratham.  \u092e\u0941\u091d\u0947 \u0939\u093f\u0902\u0926\u0940 \u092e\u0947\u0902 \u092c\u093e\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0916\u0941\u0936\u0940 \u0939\u094b\u0917\u0940\u0964  (Mujhe Hindi mein baat karne mein khushi hogi.)  Please tell me what's on your mind."
+    ],
+    "Hindi me Bola Tata English like Ebola.": [
+        "Pratham, I understand you're saying that speaking Hindi feels better than English, and that English feels like Ebola \u2013 a dangerous and unpleasant thing.  Can you tell me more about why you feel that way?  What makes speaking Hindi feel so much better and English feel so negative?"
+    ]
+}

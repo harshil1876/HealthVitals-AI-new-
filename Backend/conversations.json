@@ -1,0 +1,347 @@
+[
+    {
+        "id": "conv_1751293090",
+        "title": "Conversation with Harshil",
+        "user_info": {
+            "name": "Harshil",
+            "age": "21",
+            "gender": "male"
+        },
+        "summary": "A conversation was held covering 0 topics.",
+        "timestamp": "2025-06-30T19:48:10.398606",
+        "messageCount": 9,
+        "duration": 172,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:15:17.492Z"
+            },
+            {
+                "sender": "user",
+                "content": "Harshil",
+                "timestamp": "2025-06-30T14:15:28.859Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. Now, could you please tell me your age?",
+                "timestamp": "2025-06-30T14:15:33.025Z"
+            },
+            {
+                "sender": "user",
+                "content": "21",
+                "timestamp": "2025-06-30T14:16:26.519Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Got it. And your gender?",
+                "timestamp": "2025-06-30T14:16:27.975Z"
+            },
+            {
+                "sender": "user",
+                "content": "male",
+                "timestamp": "2025-06-30T14:16:32.050Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. All set up. How can I help you today?",
+                "timestamp": "2025-06-30T14:16:35.673Z"
+            },
+            {
+                "sender": "user",
+                "content": "hello ",
+                "timestamp": "2025-06-30T14:17:02.726Z"
+            },
+            {
+                "sender": "system",
+                "content": "Error: Could not get a response from the AI assistant.",
+                "timestamp": "2025-06-30T14:17:03.732Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751293098",
+        "title": "Conversation with None",
+        "user_info": {
+            "name": null,
+            "age": null,
+            "gender": null
+        },
+        "summary": "A conversation was held covering 0 topics.",
+        "timestamp": "2025-06-30T19:48:18.446263",
+        "messageCount": 1,
+        "duration": 2,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:18:15.832Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751293767",
+        "title": "Conversation with Harshil",
+        "user_info": {
+            "name": "Harshil",
+            "age": "21",
+            "gender": "male"
+        },
+        "summary": "A conversation was held covering 2 topics.",
+        "timestamp": "2025-06-30T19:59:27.781874",
+        "messageCount": 11,
+        "duration": 148,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:26:58.854Z"
+            },
+            {
+                "sender": "user",
+                "content": "Harshil",
+                "timestamp": "2025-06-30T14:27:07.861Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. Now, could you please tell me your age?",
+                "timestamp": "2025-06-30T14:27:09.311Z"
+            },
+            {
+                "sender": "user",
+                "content": "21",
+                "timestamp": "2025-06-30T14:27:16.944Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Got it. And your gender?",
+                "timestamp": "2025-06-30T14:27:19.549Z"
+            },
+            {
+                "sender": "user",
+                "content": "male",
+                "timestamp": "2025-06-30T14:27:27.065Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. All set up. How can I help you today?",
+                "timestamp": "2025-06-30T14:27:32.753Z"
+            },
+            {
+                "sender": "user",
+                "content": "hello",
+                "timestamp": "2025-06-30T14:27:54.517Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Hello! How can I help you today?",
+                "timestamp": "2025-06-30T14:28:07.938Z"
+            },
+            {
+                "sender": "user",
+                "content": "how are you",
+                "timestamp": "2025-06-30T14:28:15.621Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thanks for asking! As an AI, I don't have feelings or a personal state of being, but I am fully operational and ready to help.\n\nWhat can I do for you today?",
+                "timestamp": "2025-06-30T14:28:43.623Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751294812",
+        "title": "Conversation with None",
+        "user_info": {
+            "name": null,
+            "age": null,
+            "gender": null
+        },
+        "summary": "A conversation was held covering 0 topics.",
+        "timestamp": "2025-06-30T20:16:52.567415",
+        "messageCount": 1,
+        "duration": 19,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:46:33.018Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751294942",
+        "title": "Conversation with Harshil",
+        "user_info": {
+            "name": "Harshil",
+            "age": "21",
+            "gender": "male"
+        },
+        "summary": "A conversation was held covering 1 topics.",
+        "timestamp": "2025-06-30T20:19:02.438307",
+        "messageCount": 8,
+        "duration": 91,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:47:30.853Z"
+            },
+            {
+                "sender": "user",
+                "content": "Harshil",
+                "timestamp": "2025-06-30T14:47:42.895Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. Now, could you please tell me your age?",
+                "timestamp": "2025-06-30T14:47:48.140Z"
+            },
+            {
+                "sender": "user",
+                "content": "21",
+                "timestamp": "2025-06-30T14:47:57.564Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Got it. And your gender?",
+                "timestamp": "2025-06-30T14:48:01.203Z"
+            },
+            {
+                "sender": "user",
+                "content": "male",
+                "timestamp": "2025-06-30T14:48:07.835Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. All set up. How can I help you today?",
+                "timestamp": "2025-06-30T14:48:10.316Z"
+            },
+            {
+                "sender": "user",
+                "content": "exit",
+                "timestamp": "2025-06-30T14:48:49.432Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751295212",
+        "title": "Conversation with Harshil",
+        "user_info": {
+            "name": "Harshil",
+            "age": "21",
+            "gender": "male"
+        },
+        "summary": "A conversation was held covering 0 topics.",
+        "timestamp": "2025-06-30T20:23:32.837011",
+        "messageCount": 7,
+        "duration": 77,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:52:12.235Z"
+            },
+            {
+                "sender": "user",
+                "content": "Harshil",
+                "timestamp": "2025-06-30T14:52:23.985Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. Now, could you please tell me your age?",
+                "timestamp": "2025-06-30T14:52:28.528Z"
+            },
+            {
+                "sender": "user",
+                "content": "21",
+                "timestamp": "2025-06-30T14:52:36.704Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Got it. And your gender?",
+                "timestamp": "2025-06-30T14:52:37.419Z"
+            },
+            {
+                "sender": "user",
+                "content": "male",
+                "timestamp": "2025-06-30T14:52:41.903Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. All set up. How can I help you today?",
+                "timestamp": "2025-06-30T14:52:47.730Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751295383",
+        "title": "Conversation with Harshil",
+        "user_info": {
+            "name": "Harshil",
+            "age": "21",
+            "gender": "male"
+        },
+        "summary": "A conversation was held covering 0 topics.",
+        "timestamp": "2025-06-30T20:26:23.977954",
+        "messageCount": 7,
+        "duration": 40,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T14:55:43.112Z"
+            },
+            {
+                "sender": "user",
+                "content": "Harshil",
+                "timestamp": "2025-06-30T14:55:55.553Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. Now, could you please tell me your age?",
+                "timestamp": "2025-06-30T14:55:59.618Z"
+            },
+            {
+                "sender": "user",
+                "content": "21",
+                "timestamp": "2025-06-30T14:56:06.513Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Got it. And your gender?",
+                "timestamp": "2025-06-30T14:56:07.808Z"
+            },
+            {
+                "sender": "user",
+                "content": "male",
+                "timestamp": "2025-06-30T14:56:13.006Z"
+            },
+            {
+                "sender": "ai",
+                "content": "Thank you, Harshil. All set up. How can I help you today?",
+                "timestamp": "2025-06-30T14:56:13.707Z"
+            }
+        ]
+    },
+    {
+        "id": "conv_1751298006",
+        "title": "Conversation with None",
+        "user_info": {
+            "name": null,
+            "age": null,
+            "gender": null
+        },
+        "summary": "A conversation was held covering 0 topics.",
+        "timestamp": "2025-06-30T21:10:06.716432",
+        "messageCount": 1,
+        "duration": 12,
+        "transcript": [
+            {
+                "sender": "ai",
+                "content": "Hello! I'm your AI health assistant. Before we begin, could you please tell me your name?",
+                "timestamp": "2025-06-30T15:39:53.694Z"
+            }
+        ]
+    }
+]
