@@ -1,36 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import GlobalHeader from '../../components/ui/GlobalHeader';
-import StartConversationCard from './components/StartConversationCard';
-import RecentConversationsTimeline from './components/RecentConversationsTimeline';
-import ConversationStatsPanel from './components/ConversationStatsPanel';
-import SearchAndFilters from './components/SearchAndFilters';
-import FloatingActionButton from './components/FloatingActionButton';
-import QuickActionsBar from './components/QuickActionsBar';
-import Icon from '../../components/AppIcon';
-import Button from '../../components/ui/Button';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import GlobalHeader from "../../components/ui/GlobalHeader";
+import StartConversationCard from "./components/StartConversationCard";
+import RecentConversationsTimeline from "./components/RecentConversationsTimeline";
+import ConversationStatsPanel from "./components/ConversationStatsPanel";
+import SearchAndFilters from "./components/SearchAndFilters";
+import FloatingActionButton from "./components/FloatingActionButton";
+import QuickActionsBar from "./components/QuickActionsBar";
+import Icon from "../../components/AppIcon";
+import Button from "../../components/ui/Button";
 
 const VoiceConversationDashboard = () => {
   const navigate = useNavigate();
   const [isRefreshing, setIsRefreshing] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [activeFilters, setActiveFilters] = useState({
-    dateRange: 'all',
+    dateRange: "all",
     topics: [],
-    healthScore: 'all'
+    healthScore: "all",
   });
 
   // Mock user data
   const userData = {
-    name: 'Dr. Sarah Johnson',
+    name: "Dr. Pratham Wadhwani",
     lastConversation: new Date(Date.now() - 86400000), // 1 day ago
     totalConversations: 47,
-    healthScore: 86
+    healthScore: 86,
   };
 
   useEffect(() => {
     // Simulate initial data loading
-    document.title = 'Voice Conversation Dashboard - HealthVitals AI';
+    document.title = "Voice Conversation Dashboard - HealthVitals AI";
   }, []);
 
   const handleRefresh = async () => {
@@ -44,28 +44,28 @@ const VoiceConversationDashboard = () => {
   const handleSearch = (query) => {
     setSearchQuery(query);
     // In real app, this would filter conversations
-    console.log('Searching for:', query);
+    console.log("Searching for:", query);
   };
 
   const handleFilter = (filters) => {
     setActiveFilters(filters);
     // In real app, this would apply filters to conversations
-    console.log('Applying filters:', filters);
+    console.log("Applying filters:", filters);
   };
 
   const handleEmergency = () => {
     // In real app, this would trigger emergency protocols
-    alert('Emergency services would be contacted immediately');
+    alert("Emergency services would be contacted immediately");
   };
 
   const formatLastConversation = (date) => {
     const now = new Date();
     const diffTime = Math.abs(now - date);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
-    if (diffDays === 1) return 'Yesterday';
+
+    if (diffDays === 1) return "Yesterday";
     if (diffDays <= 7) return `${diffDays} days ago`;
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   };
 
   return (
@@ -81,15 +81,16 @@ const VoiceConversationDashboard = () => {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <h1 className="text-2xl lg:text-3xl font-heading font-bold text-text-primary mb-2">
-                  Welcome back, {userData.name.split(' ')[1]}
+                  Welcome back, {userData.name.split(" ")[1]}
                 </h1>
                 <p className="text-text-secondary">
-                  Last conversation: {formatLastConversation(userData.lastConversation)} • 
-                  {userData.totalConversations} total conversations • 
-                  Health score: {userData.healthScore}%
+                  Last conversation:{" "}
+                  {formatLastConversation(userData.lastConversation)} •
+                  {userData.totalConversations} total conversations • Health
+                  score: {userData.healthScore}%
                 </p>
               </div>
-              
+
               <div className="hidden lg:flex items-center space-x-3">
                 <Button
                   variant="outline"
@@ -100,14 +101,14 @@ const VoiceConversationDashboard = () => {
                   disabled={isRefreshing}
                   className={isRefreshing ? "animate-spin" : ""}
                 >
-                  {isRefreshing ? 'Refreshing...' : 'Refresh'}
+                  {isRefreshing ? "Refreshing..." : "Refresh"}
                 </Button>
                 <Button
                   variant="primary"
                   size="sm"
                   iconName="Mic"
                   iconSize={16}
-                  onClick={() => navigate('/active-voice-conversation')}
+                  onClick={() => navigate("/active-voice-conversation")}
                 >
                   Start Conversation
                 </Button>
@@ -125,14 +126,14 @@ const VoiceConversationDashboard = () => {
                 disabled={isRefreshing}
                 className={`flex-1 ${isRefreshing ? "animate-spin" : ""}`}
               >
-                {isRefreshing ? 'Refreshing...' : 'Refresh'}
+                {isRefreshing ? "Refreshing..." : "Refresh"}
               </Button>
               <Button
                 variant="primary"
                 size="sm"
                 iconName="Mic"
                 iconSize={16}
-                onClick={() => navigate('/active-voice-conversation')}
+                onClick={() => navigate("/active-voice-conversation")}
                 className="flex-1"
               >
                 Start Conversation
@@ -153,7 +154,10 @@ const VoiceConversationDashboard = () => {
             <div className="lg:col-span-6 space-y-6">
               <StartConversationCard />
               <QuickActionsBar />
-              <SearchAndFilters onSearch={handleSearch} onFilter={handleFilter} />
+              <SearchAndFilters
+                onSearch={handleSearch}
+                onFilter={handleFilter}
+              />
               <RecentConversationsTimeline />
             </div>
 
@@ -167,23 +171,25 @@ const VoiceConversationDashboard = () => {
                       AI Health Tips
                     </h3>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div className="p-4 bg-primary/5 rounded-medical border border-primary/20">
                       <h4 className="text-sm font-medium text-primary mb-2">
                         Daily Reminder
                       </h4>
                       <p className="text-xs text-text-secondary">
-                        Remember to check your blood pressure this evening. Your readings have been improving!
+                        Remember to check your blood pressure this evening. Your
+                        readings have been improving!
                       </p>
                     </div>
-                    
+
                     <div className="p-4 bg-secondary/5 rounded-medical border border-secondary/20">
                       <h4 className="text-sm font-medium text-secondary mb-2">
                         Wellness Tip
                       </h4>
                       <p className="text-xs text-text-secondary">
-                        Consider discussing your sleep patterns in your next conversation for better insights.
+                        Consider discussing your sleep patterns in your next
+                        conversation for better insights.
                       </p>
                     </div>
                   </div>
@@ -191,7 +197,7 @@ const VoiceConversationDashboard = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => navigate('/health-insights-analytics')}
+                    onClick={() => navigate("/health-insights-analytics")}
                     iconName="ArrowRight"
                     iconSize={14}
                     className="w-full mt-4"

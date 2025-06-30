@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Icon from '../AppIcon';
-import Button from './Button';
+import React, { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Icon from "../AppIcon";
+import Button from "./Button";
 
 const ProfileSettingsMenu = ({ isMobile = false }) => {
   const navigate = useNavigate();
@@ -11,43 +11,43 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
 
   // Mock user data - in real app this would come from context/props
   const userData = {
-    name: 'Dr. Sarah Johnson',
-    email: 'sarah.johnson@healthvitals.com',
+    name: "Pratham Wadhwani",
+    email: "prathamwadhwani@gmail.com",
     avatar: null,
-    role: 'Healthcare Professional'
+    role: "User",
   };
 
   const menuItems = [
     {
-      label: 'Settings & Preferences',
-      path: '/settings-preferences',
-      icon: 'Settings',
-      description: 'Manage your account and preferences'
+      label: "Settings & Preferences",
+      path: "/settings-preferences",
+      icon: "Settings",
+      description: "Manage your account and preferences",
     },
     {
-      label: 'Privacy Controls',
-      path: '/settings-preferences?tab=privacy',
-      icon: 'Shield',
-      description: 'Data privacy and security settings'
+      label: "Privacy Controls",
+      path: "/settings-preferences?tab=privacy",
+      icon: "Shield",
+      description: "Data privacy and security settings",
     },
     {
-      label: 'Voice Settings',
-      path: '/settings-preferences?tab=voice',
-      icon: 'Mic',
-      description: 'Configure voice interaction preferences'
+      label: "Voice Settings",
+      path: "/settings-preferences?tab=voice",
+      icon: "Mic",
+      description: "Configure voice interaction preferences",
     },
     {
-      label: 'Help & Support',
-      path: '/settings-preferences?tab=support',
-      icon: 'HelpCircle',
-      description: 'Get help and contact support'
-    }
+      label: "Help & Support",
+      path: "/settings-preferences?tab=support",
+      icon: "HelpCircle",
+      description: "Get help and contact support",
+    },
   ];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        menuRef.current && 
+        menuRef.current &&
         !menuRef.current.contains(event.target) &&
         buttonRef.current &&
         !buttonRef.current.contains(event.target)
@@ -57,19 +57,19 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
     };
 
     const handleEscape = (event) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         setIsOpen(false);
       }
     };
 
     if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-      document.addEventListener('keydown', handleEscape);
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
     };
   }, [isOpen]);
 
@@ -80,15 +80,15 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
 
   const handleSignOut = () => {
     // In real app, this would handle authentication logout
-    navigate('/user-registration-login');
+    navigate("/user-registration-login");
     setIsOpen(false);
   };
 
   const getInitials = (name) => {
     return name
-      .split(' ')
-      .map(word => word.charAt(0))
-      .join('')
+      .split(" ")
+      .map((word) => word.charAt(0))
+      .join("")
       .toUpperCase()
       .slice(0, 2);
   };
@@ -100,8 +100,8 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
         <div className="flex items-center space-x-3 p-4 bg-surface rounded-medical border border-border">
           <div className="flex items-center justify-center w-12 h-12 bg-primary text-primary-foreground rounded-full font-medium">
             {userData.avatar ? (
-              <img 
-                src={userData.avatar} 
+              <img
+                src={userData.avatar}
                 alt={userData.name}
                 className="w-full h-full rounded-full object-cover"
               />
@@ -110,8 +110,12 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
             )}
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-medium text-text-primary truncate">{userData.name}</h3>
-            <p className="text-sm text-text-secondary truncate">{userData.email}</p>
+            <h3 className="font-medium text-text-primary truncate">
+              {userData.name}
+            </h3>
+            <p className="text-sm text-text-secondary truncate">
+              {userData.email}
+            </p>
             <p className="text-xs text-text-muted">{userData.role}</p>
           </div>
         </div>
@@ -126,8 +130,12 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
             >
               <Icon name={item.icon} size={18} color="currentColor" />
               <div className="flex-1">
-                <div className="font-medium text-text-primary">{item.label}</div>
-                <div className="text-sm text-text-secondary">{item.description}</div>
+                <div className="font-medium text-text-primary">
+                  {item.label}
+                </div>
+                <div className="text-sm text-text-secondary">
+                  {item.description}
+                </div>
               </div>
             </button>
           ))}
@@ -161,8 +169,8 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
       >
         <div className="flex items-center justify-center w-8 h-8 bg-primary text-primary-foreground rounded-full text-sm font-medium">
           {userData.avatar ? (
-            <img 
-              src={userData.avatar} 
+            <img
+              src={userData.avatar}
               alt={userData.name}
               className="w-full h-full rounded-full object-cover"
             />
@@ -170,9 +178,9 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
             getInitials(userData.name)
           )}
         </div>
-        <Icon 
-          name={isOpen ? "ChevronUp" : "ChevronDown"} 
-          size={16} 
+        <Icon
+          name={isOpen ? "ChevronUp" : "ChevronDown"}
+          size={16}
           className="text-text-secondary"
         />
       </button>
@@ -188,8 +196,8 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
             <div className="flex items-center space-x-3">
               <div className="flex items-center justify-center w-12 h-12 bg-primary text-primary-foreground rounded-full font-medium">
                 {userData.avatar ? (
-                  <img 
-                    src={userData.avatar} 
+                  <img
+                    src={userData.avatar}
                     alt={userData.name}
                     className="w-full h-full rounded-full object-cover"
                   />
@@ -198,8 +206,12 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
                 )}
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-medium text-text-primary truncate">{userData.name}</h3>
-                <p className="text-sm text-text-secondary truncate">{userData.email}</p>
+                <h3 className="font-medium text-text-primary truncate">
+                  {userData.name}
+                </h3>
+                <p className="text-sm text-text-secondary truncate">
+                  {userData.email}
+                </p>
                 <p className="text-xs text-text-muted">{userData.role}</p>
               </div>
             </div>
@@ -215,8 +227,12 @@ const ProfileSettingsMenu = ({ isMobile = false }) => {
               >
                 <Icon name={item.icon} size={18} color="currentColor" />
                 <div className="flex-1">
-                  <div className="font-medium text-text-primary">{item.label}</div>
-                  <div className="text-sm text-text-secondary">{item.description}</div>
+                  <div className="font-medium text-text-primary">
+                    {item.label}
+                  </div>
+                  <div className="text-sm text-text-secondary">
+                    {item.description}
+                  </div>
                 </div>
               </button>
             ))}
